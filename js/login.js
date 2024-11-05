@@ -1,4 +1,4 @@
-const socket = new WebSocket('ws://26.10.139.72:8888/login');
+const socket = new WebSocket('ws://0.0.0.0:8888/login');
 
 function loginUser(username, password) {
     const loginData = {
