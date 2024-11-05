@@ -1,6 +1,14 @@
 import asyncio
 import websockets
 import json
+import argparse
+
+parser = argparse.ArgumentParser()
+
+parser.add_argument("-u", "--url", help="URL ou endereço IP do servidor")
+parser.add_argument("-p", "--porta", type=int, help="URL ou endereço porta do servidor")
+
+parametros = parser.parse_args()
 
 active_chats = {}
 active_users = {}
@@ -68,8 +76,8 @@ async def handler(websocket, path):
             del active_chats[path]
 
 async def main():
-    server = await websockets.serve(handler, "26.10.139.72", 8888)
-    print("Servidor WebSocket rodando em ws://26.10.139.72:8888")
+    server = await websockets.serve(handler, parametros.url, parametros.porta)
+    print("Servidor WebSocket rodando em ws://{}:{}".format(parametros.url, parametros.porta))
     await server.wait_closed()
 
 asyncio.run(main())
