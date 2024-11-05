@@ -16,7 +16,7 @@ function initializeWebSockets() {
 
     chatNames.forEach(chat => {
         if (!sockets[chat]) {
-            const socket = new WebSocket(`ws://26.10.139.72:8888/${chat}`);
+            const socket = new WebSocket(`ws://0.0.0.0:8888/${chat}`);
 
             socket.addEventListener('open', function() {
                 console.log(`Conectado ao WebSocket para ${chat}`);
