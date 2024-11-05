@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewChat</title>
+    <link rel="icon" href="img/logo_NewChat.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/home.css">
+
+</head>
+<body>
+    
+    <div class="boxExterna">
+        <div class="boxSelectChats">   
+            <img src="img/logo_NewChat.png" alt="NEWCHAT" class="small-logo" >
+            
+            <section class="conversas">
+                <div class="chatButton">
+                    <button class="bottomChat" onclick="selectConversation('ChatOne')">ChatOne</button>
+                    <P></P>
+                    <button class="bottomChat" onclick="selectConversation('ChatTwo')">ChatTwo</button>
+                    <P></P>
+                    <button class="bottomChat" onclick="selectConversation('ChatThree')">ChatThree</button>
+                    <div class="espaco"></div>
+                    <button class="bottomLogout" id="bottomLogout">Logout</button>
+                </div>
+            </section>
+            
+        </div>
+        <div class="boxExternaChat">
+            <p class="text" id="chatName">NOME CHAT</p>
+            <div id="conversationContent" class="boxChat"></div> 
+            <p></p>
+            <button class="bottomClearMessages" onclick="clearMessages()">Clear messages</button>
+            <div class="boxSendChatText">
+                <input class="chatText" type="text" id="messageInput" placeholder="Message..." />
+                <button  class="bottomSendMessage" onclick="sendMessage()"></button>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+
+</body>
+<script src="js/home.js"></script>
+</html>
+
+

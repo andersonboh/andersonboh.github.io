@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewChat</title>
+    <link rel="icon" href="img/logo_NewChat.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">User</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" id="loginButton">Sign in</button>
+        </form>
+        <button type="button" id="registerButton" class="register-button">Sign up</button>
+        <p id="errorMessage" style="color: red;"></p>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image:url(../img/Backgroud.png) ;
+}
+
+/* Container de login */
+.login-container {
+    width: 300px;
+    padding: 20px;
+    background-color: rgba(88, 130, 193, 0.296);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Estilos dos campos do formulário */
+.login-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.1);;
+    border: 0px solid #cccccc;
+    border-radius: 10px;
+}
+
+/* Botão de login */
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #003465;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #0085FF;
+}
+
+.register-button {
+    margin-top: 10px;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewChat</title>
+    <link rel="icon" href="img/logo_NewChat.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <div class="register-container">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <label for="username">Name</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <button type="submit" id="registerButton">Register</button>
+        </form>
+        <p id="errorMessage" style="color: red;"></p>
+    </div>
+    <script src="js/register.js"></script>
+</body>
+</html>
